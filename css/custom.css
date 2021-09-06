@@ -108,3 +108,37 @@ background: rgba(255, 255, 255, 0.8);
       background: rgba(0, 0, 0, 0.5)!important;
       color: #eeeeee;
       }
+/* 设置白天模式的友链样式 */
+div.flink-list-item{
+  border: 1px solid #98d3d370;
+  box-shadow: 5px 5px 5px #a0a0a0;
+  /*底色*/
+  background-color:#00000000;
+  /*chrome2+,safari4+;multiplecolorstops*/
+  background-image:-webkit-gradient(linear,leftbottom,righttop,color-stop(0.32,#ce1ef170),color-stop(0.66,#0fe9e970),color-stop(0.83,#3e76aa70));
+  /*chrome10+,safari5.1+*/
+  background-image:-webkit-linear-gradient(45deg,#ce1ef170,#0fe9e970,#3e76aa70);
+  /*firefox;multiplecolorstops*/
+  background-image:-moz-linear-gradient(45deg,#ce1ef170,#0fe9e970,#3e76aa70);
+  
+}
+/* 设置白天模式的友链遮罩层样式 */
+div.flink-list-item::before{
+  background: rgba(0, 0, 0, 0.2)!important;
+}
+/* 设置鼠标悬停友链时的字体颜色 */
+span.flink-item-name:hover{
+  color: #e95f10e1;
+}
+/* 设置夜间模式的友链样式 */
+[data-theme="dark"]
+  div.flink-list-item{
+    box-shadow: 5px 5px 5px #c0c0c0a4;
+  }
+/* 设置夜间模式的友链遮罩层样式 */
+[data-theme="dark"]
+  div.flink-list-item::before{
+    background: rgba(255, 255, 255, 0.2)!important;
+  }
+
+

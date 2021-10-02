@@ -255,6 +255,11 @@ body.night .box2 {
   border: 1px solid #3f4142;
 }
 
+body.night .box2:hover {
+  -webkit-box-shadow: 0 0 8px 0 rgb(232 237 250 / 60%), 0 2px 4px 0 rgb(232 237 250 / 50%) !important;
+  box-shadow: 0 0 8px 0 rgb(232 237 250 / 60%), 0 2px 4px 0 rgb(232 237 250 / 50%) !important;
+}
+
 body.night .xe-comment a {
   color: #d8d8d8;
 }

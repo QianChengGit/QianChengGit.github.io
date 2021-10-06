@@ -133,7 +133,12 @@ span.flink-item-name:hover{
 /* 设置夜间模式的友链样式 */
 [data-theme="dark"]
   div.flink-list-item{
-    box-shadow: 5px 5px 5px #c0c0c0a4;
+    /* box-shadow: 5px 5px 5px #c0c0c0a4; */
+    box-shadow: rgba(102, 218, 215, 0.8) 2px 2px 8px 0px !important;
+  }
+[data-theme="dark"]
+  div.flink-list-item:hover{
+    box-shadow: rgba(102, 218, 215, 0.8) 0px 0px 2px 0px !important;
   }
 /* 设置夜间模式的友链遮罩层样式 */
 [data-theme="dark"]
@@ -154,3 +159,119 @@ body,
 .gitcalendar {
     font-family: tzy !important;
 }
+
+/* 修改朋友圈白天样式 */
+div#fMessageBoard{
+  height: 280px;
+}
+div.fActiveFriend.fItem{
+  margin-top: 10px;
+}
+div.fArticleNum.fItem{
+  margin-bottom: 10px;
+}
+span#rankByCreated{
+  line-height: 30px;
+}
+span#rankByUpdated{
+  line-height: 30px;
+} 
+/* 修改朋友圈夜间模式 */
+[data-theme="dark"]
+  div#fMessageBoard{
+    background-color: rgba(21, 21, 21, 0.5);
+    color: #eeeeee;
+    height: 280px;
+    box-shadow: rgba(102, 218, 215, 0.5) 2px 2px 5px 0px;
+  }
+[data-theme="dark"]
+  div.fMessageItem{
+    background-color: rgba(21, 21, 21, 0.5) !important;
+    box-shadow: rgba(222, 221, 174, 0.5) 0px 0px 5px 0px inset !important;
+  }
+[data-theme="dark"]
+  div.fActiveFriend.fItem{
+    background-color: rgba(0, 0, 0, 0) !important;
+    margin-top: 10px;
+  }
+[data-theme="dark"]
+  div.fErrorSite.fItem{
+    background-color: rgba(0, 0, 0, 0) !important;
+  }
+[data-theme="dark"]
+  div.fArticleNum.fItem{
+    background-color: rgba(0, 0, 0, 0) !important;
+    margin-bottom: 10px;
+  }
+[data-theme="dark"]
+  span#rankByCreated{
+    line-height: 30px;
+  }
+[data-theme="dark"]
+  span#rankByUpdated{
+    line-height: 30px;
+  }
+[data-theme="dark"]
+  div.fArticleItem{
+    background-color: rgba(21, 21, 21, 0.5) !important;
+    color: #eeeeee !important;
+    box-shadow: rgba(102, 218, 215, 0.5) 2px 2px 5px 0px !important;
+  }
+[data-theme="dark"]
+  div.fArticleItem:hover{
+    box-shadow: rgba(102, 218, 215, 0.5) 0px 0px 2px 0px !important;
+  }
+[data-theme="dark"]
+  a.fArticleTitle{
+    color: #eeeeee !important;
+  }
+[data-theme="dark"]
+  div#fcircleMoreBtn{
+    background-color: rgba(21, 21, 21, 0.5) !important;
+    color: #eeeeee !important;
+    box-shadow: rgba(102, 218, 215, 0.5) 2px 2px 5px 0px  !important;
+  }
+[data-theme="dark"]
+  div#fcircleMoreBtn:hover{
+    box-shadow: rgba(102, 218, 215, 0.5) 0px 0px 2px 0px !important;
+  }
+
+  /* 评论白天模式背景设置 */
+div.gt-comment-body.markdown-body{
+  font-family: 'tzy';
+}
+div.gt-comment-content{
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  box-shadow: rgba(17, 104, 235, 0.8);
+  border-radius: 5px;
+}
+div.gt-comment.gt-comment-admin .gt-comment-content{
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: rgba(17, 104, 235, 0.8);
+  border-radius: 5px;
+}
+div.gt-comment-content:hover{
+  box-shadow: rgba(170, 170, 170, 0.8) 2px 2px 10px 0px  !important;
+}
+  /* 评论夜间模式背景设置 */
+[data-theme="dark"]
+  div.gt-comment-body.markdown-body{
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-family: 'tzy';
+  }
+[data-theme="dark"]
+  div.gt-comment-content{
+    background-color: rgba(21, 21, 21, 0);
+    box-shadow: rgba(17, 104, 235, 0.8);
+    border-radius: 5px;
+  }
+[data-theme="dark"]
+  div.gt-comment.gt-comment-admin .gt-comment-content{
+    background-color: rgba(21, 21, 21, 0);
+    box-shadow: rgba(17, 104, 235, 0.8);
+    border-radius: 5px;
+  }
+[data-theme="dark"]
+  div.gt-comment-content:hover{
+    box-shadow: rgba(139, 182, 247, 0.8) 2px 2px 10px 0px  !important;
+  }

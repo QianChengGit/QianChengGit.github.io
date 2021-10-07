@@ -1,11 +1,11 @@
-/*iconfontĬ����ʽ*/
+/*iconfont默认样式*/
 .icon {
   width: 1em; height: 1em;
   vertical-align: -0.15em;
   fill: currentColor;
   overflow: hidden;
   }
-/* ҳ�ź�����ᶯ�� */
+/* 页脚蝴蝶振翅动画 */
 .copyright svg{
   animation:butterfly 1s linear infinite alternate;
 }
@@ -90,6 +90,15 @@ background: rgba(255, 255, 255, 0.8);
   div#archive{
     background: rgba(0, 0, 0, 0.5)!important;
     }
+[data-theme="dark"]
+  div#tag{
+    background: rgba(0, 0, 0, 0.5)!important;
+  }
+[data-theme="dark"]
+  div#category{
+    background: rgba(0, 0, 0, 0.5)!important;
+  }
+  
 /*阅读模式*/
 .read-mode #aside-content .card-widget{
       background: rgba(158, 204, 171, 0.5)!important;

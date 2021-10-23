@@ -322,3 +322,11 @@ div.search-dialog__title{
 div.search-dialog span.search-close-button:hover {
   color: #f84040;
 }
+
+/* 修改侧边栏及文章时间轴图片为圆角,加入博客群聊按钮为圆角 */
+img.entered.loaded{
+  border-radius: 5px;
+}
+a.thumbnail,a.article-sort-item-img,a#card-info-btn.button--animated,a#card-info-btn.button--animated::before{
+  border-radius: 5px;
+}

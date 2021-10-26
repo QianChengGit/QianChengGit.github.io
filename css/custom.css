@@ -328,8 +328,26 @@ div.search-dialog span.search-close-button:hover {
 img.entered.loaded{
   border-radius: 5px;
 }
-a.thumbnail,a.article-sort-item-img,a#card-info-btn.button--animated,a#card-info-btn.button--animated::before{
+a.thumbnail,a.article-sort-item-img{
   border-radius: 5px;
+}
+a#card-info-btn.button--animated{
+  border-radius: 5px;
+  /*chrome10+,safari5.1+*/
+  background-image:-webkit-linear-gradient(30deg,#68ebe8,#dd7cce);
+}
+a#card-info-btn.button--animated::before{
+  border-radius: 5px;
+  background-color: #ffffff50;
+}
+[data-theme="dark"]
+a#card-info-btn.button--animated{
+  /*chrome10+,safari5.1+*/
+  background-image:-webkit-linear-gradient(30deg,#48a7a5,#ac5fa0);
+}
+[data-theme="dark"]
+a#card-info-btn.button--animated::before{
+  background-color: #00000050;
 }
 
 /* 手机模式下菜单栏背景和搜索框背景 */
@@ -341,33 +359,62 @@ a.thumbnail,a.article-sort-item-img,a#card-info-btn.button--animated,a#card-info
     border: 1px solid #98d3d370;
     /* box-shadow: 5px 5px 5px #a0a0a0; */
     background-color: #ffffffaa;
-    background-image: -webkit-gradient(linear,leftbottom,righttop,color-stop(0.32,#a163ad),color-stop(0.66,#3e9b9b),color-stop(0.83,#2e5070));
-    background-image: -webkit-linear-gradient(45deg,#a163ad,#3e9b9b,#2e5070);
+    background-image: -webkit-gradient(linear,leftbottom,righttop,color-stop(0.32,#ef32d9),color-stop(0.66,#3e9b9b),color-stop(0.83,#89fffd));
+    background-image: -webkit-linear-gradient(30deg,#647c89b0,#19778bb0);
   }
 
   /* 菜单栏背景 */
   div#sidebar #sidebar-menus{
-    border: 1px solid #98d3d370;
-    /* box-shadow: 5px 5px 5px #a0a0a0; */
     /*底色*/
     background-color:#ffffffaa;
     /*chrome2+,safari4+;multiplecolorstops*/
-    background-image:-webkit-gradient(linear,leftbottom,righttop,color-stop(0.32,#39b7d6dd),color-stop(0.66,#485edadd),color-stop(0.83,#eb7fa3dd));
+    background-image:-webkit-gradient(linear,leftbottom,righttop,color-stop(0.32,#9dfaf8ef),color-stop(0.83,#eebde7ef));
     /*chrome10+,safari5.1+*/
-    background-image:-webkit-linear-gradient(45deg,#39b7d6dd,#485edadd,#eb7fa3dd);
+    background-image:-webkit-linear-gradient(30deg,#9dfaf8ef,#eebde7ef);
     /*firefox;multiplecolorstops*/
-    background-image:-moz-linear-gradient(45deg,#39b7d6dd,#485edadd,#eb7fa3dd);
+    background-image:-moz-linear-gradient(45deg,#9dfaf8ef,#eebde7ef);
   }
   div#sidebar #sidebar-menus.open{
-    border: 1px solid #98d3d370;
-    /* box-shadow: 5px 5px 5px #a0a0a0; */
     /*底色*/
     background-color:#ffffffaa;
     /*chrome2+,safari4+;multiplecolorstops*/
-    background-image:-webkit-gradient(linear,leftbottom,righttop,color-stop(0.32,#39b7d6dd),color-stop(0.66,#485edadd),color-stop(0.83,#eb7fa3dd));
+    background-image:-webkit-gradient(linear,leftbottom,righttop,color-stop(0.32,#9dfaf8ef),color-stop(0.83,#eebde7ef));
     /*chrome10+,safari5.1+*/
-    background-image:-webkit-linear-gradient(45deg,#39b7d6dd,#485edadd,#eb7fa3dd);
+    background-image:-webkit-linear-gradient(30deg,#9dfaf8ef,#eebde7ef);
     /*firefox;multiplecolorstops*/
-    background-image:-moz-linear-gradient(45deg,#39b7d6dd,#485edadd,#eb7fa3dd);
+    background-image:-moz-linear-gradient(45deg,#9dfaf8ef,#eebde7ef);
+  }
+  /* 夜间模式菜单栏背景 */
+[data-theme="dark"]
+  div#sidebar #sidebar-menus{
+    /*底色*/
+    background-color:#000000aa;
+    /*chrome2+,safari4+;multiplecolorstops*/
+    background-image:-webkit-gradient(linear,leftbottom,righttop,color-stop(0.32,#73bbbaef),color-stop(0.83,#c799c0ef));
+    /*chrome10+,safari5.1+*/
+    background-image:-webkit-linear-gradient(30deg,#73bbbaef,#c799c0ef);
+    /*firefox;multiplecolorstops*/
+    background-image:-moz-linear-gradient(45deg,#73bbbaef,#c799c0ef);
+  }
+[data-theme="dark"]
+  div#sidebar #sidebar-menus.open{
+    /*底色*/
+    background-color:#000000aa;
+    /*chrome2+,safari4+;multiplecolorstops*/
+    background-image:-webkit-gradient(linear,leftbottom,righttop,color-stop(0.32,#73bbbaef),color-stop(0.83,#c799c0ef));
+    /*chrome10+,safari5.1+*/
+    background-image:-webkit-linear-gradient(30deg,#73bbbaef,#c799c0ef);
+    /*firefox;multiplecolorstops*/
+    background-image:-moz-linear-gradient(45deg,#73bbbaef,#c799c0ef);
+  }
+  
+  /* 手机端文章目录样式 */
+  div#card-toc.card-widget.wow.animate__zoomIn{
+    background: #ecececf3 !important;
+  }
+  /* 手机端文章目录夜间样式 */
+[data-theme="dark"]
+  div#card-toc.card-widget.wow.animate__zoomIn{
+    background: #1f1e1efa !important;
   }
 }

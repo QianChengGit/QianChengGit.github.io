@@ -417,4 +417,14 @@ a#card-info-btn.button--animated::before{
   div#card-toc.card-widget.wow.animate__zoomIn{
     background: #1f1e1efa !important;
   }
+
+  /* 加入博客群聊按钮在手机端的遮罩样式 */
+  a#card-info-btn.button--animated::before{
+    border-radius: 5px;
+    background-color: #ffffff50;
+  }
+[data-theme="dark"]
+  a#card-info-btn.button--animated::before{
+    background-color: #00000050;
+  }
 }

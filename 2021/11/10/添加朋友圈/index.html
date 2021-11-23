@@ -161,37 +161,37 @@
 <li><p>前往 <a target="_blank" rel="noopener" href="https://leancloud.app/">leancloud 国际版官网（推荐国际版）</a>注册账号并登录。</p>
 </li>
 <li><p>前往<a target="_blank" rel="noopener" href="https://console.leancloud.app/apps">控制台</a>新建应用，应用名称无限制</p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://noionion-picture-bed.oss-cn-hangzhou.aliyuncs.com/img/20210801163918.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.7/tianjiapengyouquan/20210801163918.png" alt=""></p>
 </li>
 <li><p>进入应用中，点击 <code>设置</code> -&gt; <code>应用凭证</code>，记录 <code>AppID</code> 和 <code>AppKet</code> 即可。(之后两步部署均会使用到)</p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://noionion-picture-bed.oss-cn-hangzhou.aliyuncs.com/img/20210801164344.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.7/tianjiapengyouquan/20210801164344.png" alt=""></p>
 </li>
 </ol>
 <h3 id="2-1-2github-爬虫仓库部署及配置项说明"><a href="#2-1-2github-爬虫仓库部署及配置项说明" class="headerlink" title="2.1.2github 爬虫仓库部署及配置项说明"></a>2.1.2github 爬虫仓库部署及配置项说明</h3><ol>
 <li><p><code>fork</code> 友链朋友圈的项目仓库 <a target="_blank" rel="noopener" href="https://github.com/Rock-Candy-Tea/hexo-circle-of-friends">https://github.com/Rock-Candy-Tea/hexo-circle-of-friends</a></p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://noionion-picture-bed.oss-cn-hangzhou.aliyuncs.com/img/20210801165944.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.7/tianjiapengyouquan/20210801165944.png" alt=""></p>
 </li>
 <li><p>点击 fork 后的仓库的 <code>Settings</code> -&gt; <code>Secrets</code> -&gt; <code>New repository secret</code>创建环境变量。</p>
 <p> Name 分别为： <code>APPID</code>、<code>APPKEY</code>、<code>LINK</code> ；</p>
 <p> Value 分别填入刚刚保存 Leancloud 的<code>应用 ID（AppID）</code>和<code>应用密钥（AppKey）</code>以及<code>你的友链链接</code>（例如 <a target="_blank" rel="noopener" href="https://noionion.top/link/）；">https://noionion.top/link/）；</a></p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://noionion-picture-bed.oss-cn-hangzhou.aliyuncs.com/img/20210801170342.png" alt="配置变量 1"></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.7/tianjiapengyouquan/20210801170342.png" alt="配置变量 1"></p>
 <p> 配置变量 1</p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://noionion-picture-bed.oss-cn-hangzhou.aliyuncs.com/img/20210801170853.png" alt="配置变量 2"></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.7/tianjiapengyouquan/20210801170853.png" alt="配置变量 2"></p>
 <p> 配置变量 2</p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://noionion-picture-bed.oss-cn-hangzhou.aliyuncs.com/img/20210801171155.png" alt="配置变量 3"></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.7/tianjiapengyouquan/20210801171155.png" alt="配置变量 3"></p>
 <p> 配置变量 3</p>
 </li>
 <li><p>启用友链朋友圈的 github action，点击 <code>fork</code> 后的仓库的 <code>Actions</code> -&gt; <code>I understand my workflows, go ahead and enable them</code></p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://noionion-picture-bed.oss-cn-hangzhou.aliyuncs.com/img/20210801171531.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.7/tianjiapengyouquan/20210801171531.png" alt=""></p>
 </li>
 <li><p>之后点击 <code>update-friends-posts</code> 并启用 <code>workflow</code></p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://noionion-picture-bed.oss-cn-hangzhou.aliyuncs.com/img/20210801172346.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.7/tianjiapengyouquan/20210801172346.png" alt=""></p>
 </li>
 <li><p>之后点击仓库 <code>star</code> 来完成第一次程序运行，不出意外的话结果如下图</p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://noionion-picture-bed.oss-cn-hangzhou.aliyuncs.com/img/20210801173106.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.7/tianjiapengyouquan/20210801173106.png" alt=""></p>
 </li>
 <li><p>这时你应该能在 leancloud 上看到上传的数据啦（除非你不是已经适配的主题，在配置项中会有相应解决办法），此后在每天的 8,12,17,22 点各会有两次自动更新爬取。</p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://noionion-picture-bed.oss-cn-hangzhou.aliyuncs.com/img/20210801173224.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.7/tianjiapengyouquan/20210801173224.png" alt=""></p>
 </li>
 <li><p>编辑仓库中的 setting.py 文件，需要用户自行编辑的仅如下几项（<code>使用了GitHub Action自动更新友链的才需要配置如下配置项</code>）。对于非已适配主题的 hexo 用户（无 github 和 gitee 友链）和非 hexo 用户，请将友链自行按格式添加到 CONFIG_FRIENDS_LINKS[‘list’] 中并启用它。（这是目前通用化的一种方式，如果是 hexo 用户希望适配自己的主题，请提交 issue）</p>
  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">功能 设置</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="comment"># github友链配置</span></span><br><span class="line">GITHUB_FRIENDS_LINKS = &#123;</span><br><span class="line">    <span class="string">&quot;enable&quot;</span>: <span class="literal">False</span>,    <span class="comment"># True 开启gitee issue兼容</span></span><br><span class="line">    <span class="string">&quot;type&quot;</span>: <span class="string">&quot;normal&quot;</span>,  <span class="comment"># volantis用户请在这里填写 volantis</span></span><br><span class="line">    <span class="string">&quot;owner&quot;</span>: <span class="string">&quot;Zfour&quot;</span>,  <span class="comment"># 填写你的github用户名</span></span><br><span class="line">    <span class="string">&quot;repo&quot;</span>: <span class="string">&quot;zfour-friends&quot;</span>,  <span class="comment"># 填写你的github仓库名</span></span><br><span class="line">    <span class="string">&quot;state&quot;</span>: <span class="string">&quot;open&quot;</span>  <span class="comment"># 填写抓取的issue状态(open/closed)</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># gitee友链配置</span></span><br><span class="line">GITEE_FRIENDS_LINKS = &#123;</span><br><span class="line">    <span class="string">&quot;enable&quot;</span>: <span class="literal">False</span>,    <span class="comment"># True 开启gitee issue兼容</span></span><br><span class="line">    <span class="string">&quot;type&quot;</span>: <span class="string">&quot;normal&quot;</span>,  <span class="comment"># volantis用户请在这里填写 volantis</span></span><br><span class="line">    <span class="string">&quot;owner&quot;</span>: <span class="string">&quot;Zfour&quot;</span>,  <span class="comment"># 填写你的github用户名</span></span><br><span class="line">    <span class="string">&quot;repo&quot;</span>: <span class="string">&quot;zfour-friends&quot;</span>,  <span class="comment"># 填写你的github仓库名</span></span><br><span class="line">    <span class="string">&quot;state&quot;</span>: <span class="string">&quot;open&quot;</span>  <span class="comment"># 填写抓取的issue状态(open/closed)</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 屏蔽站点</span></span><br><span class="line">BLOCK_SITE = [</span><br><span class="line">    <span class="string">&quot;https://example.com/&quot;</span>,</span><br><span class="line">    <span class="string">&#x27;https://blog.cyfan.top/&#x27;</span> <span class="comment"># 这位朋友伪造了atom不让抓咱也没办法</span></span><br><span class="line">]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 友链列表配置文件</span></span><br><span class="line">CONFIG_FRIENDS_LINKS = &#123;</span><br><span class="line">    <span class="string">&quot;enable&quot;</span>: <span class="literal">False</span>, <span class="comment"># 是否启用配置项友链 True/False（此项用于针对还未适配的主题用户）</span></span><br><span class="line">    <span class="string">&quot;list&quot;</span>:[</span><br><span class="line">        <span class="comment"># 格式：[&quot;name&quot;, &quot;link&quot;, &quot;avatar&quot;]，除最后一行外每行后面加&quot;,&quot;，&quot;[]&quot;不可省略</span></span><br><span class="line">        <span class="comment"># link的结尾最好加上&#x27;/&#x27;</span></span><br><span class="line">        <span class="comment"># 例如：</span></span><br><span class="line">        [<span class="string">&quot;贰猹の小窝&quot;</span>, <span class="string">&quot;https://noionion.top/&quot;</span>, <span class="string">&quot;https://pub-noionion.oss-cn-hangzhou.aliyuncs.com/head.jpg&quot;</span>],</span><br><span class="line">        [<span class="string">&quot;小冰博客&quot;</span>, <span class="string">&quot;https://zfe.space/&quot;</span>, <span class="string">&quot;https://zfe.space/images/headimage.png&quot;</span>]</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -201,29 +201,29 @@
 <li><p>前往<a target="_blank" rel="noopener" href="https://vercel.com/ ">vercel 官网</a> ，直接用 github 创建账号并用手机号绑定（其实前端直接调用 leancloud 的数据也可以获取信息，但会暴露你的 AppID 和 AppKey，所以套一层 vercel 作为 api 较为安全）</p>
 </li>
 <li><p>点击 <code>New Project</code> 新建项目</p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://noionion-picture-bed.oss-cn-hangzhou.aliyuncs.com/img/20210801201836.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.7/tianjiapengyouquan/20210801201836.png" alt=""></p>
 </li>
 <li><p>点击 <code>Import Third-Party Git Repository</code>，输入 <code>https://github.com/Rock-Candy-Tea/hexo-friendcircle-api</code>。</p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://noionion-picture-bed.oss-cn-hangzhou.aliyuncs.com/img/20210801202209.png" alt=""></p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://noionion-picture-bed.oss-cn-hangzhou.aliyuncs.com/img/20210801202323.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.7/tianjiapengyouquan/20210801202209.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.7/tianjiapengyouquan/20210801202323.png" alt=""></p>
 </li>
 <li><p>然后点击 <code>github</code>，输入仓库名（无限制），生成 api 仓库。（此步骤会在 github 生成一个 api 仓库（不用理它，但也不要删除））</p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://noionion-picture-bed.oss-cn-hangzhou.aliyuncs.com/img/20210801202456.png" alt=""></p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://noionion-picture-bed.oss-cn-hangzhou.aliyuncs.com/img/20210801202724.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.7/tianjiapengyouquan/20210801202456.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.7/tianjiapengyouquan/20210801202724.png" alt=""></p>
 </li>
 <li><p>下一步骤 <code>Create a Team</code> 跳过 (Skip) 即可，等它构建完后点击 <code>Go to Dashboard</code> 即可</p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://noionion-picture-bed.oss-cn-hangzhou.aliyuncs.com/img/20210801203028.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.7/tianjiapengyouquan/20210801203028.png" alt=""></p>
 </li>
 <li><p>点击项目 <code>Settings</code> -&gt; <code>Environment Variables</code>，在如图框中输入密钥，Name 分别以 <code>LEANCLOUD_ID</code>、<code>LEANCLOUD_KEY</code> 创建环境变量。<br> Value 分别填入刚刚保存 Leancloud 的<code>应用 ID（AppID）</code>和<code>应用密钥（AppKey）</code>。</p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://noionion-picture-bed.oss-cn-hangzhou.aliyuncs.com/img/20210801211034.png" alt=""></p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://noionion-picture-bed.oss-cn-hangzhou.aliyuncs.com/img/20210801211552.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.7/tianjiapengyouquan/20210801211034.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.7/tianjiapengyouquan/20210801211552.png" alt=""></p>
 </li>
 <li><p>回到项目首页，点击 <code>View Build Logs</code> 后在 Visit 左侧的选择框中点击 <code>Redeploy</code> 即可</p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://noionion-picture-bed.oss-cn-hangzhou.aliyuncs.com/img/20210801204242.png" alt=""></p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://noionion-picture-bed.oss-cn-hangzhou.aliyuncs.com/img/20210801204746.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.7/tianjiapengyouquan/20210801204242.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.7/tianjiapengyouquan/20210801204746.png" alt=""></p>
 </li>
 <li><p>回到上一页，点击 <code>visit</code> 后，在网址后面加上 <code>/api</code> 访问 api，如 <code>https://hexo-friendcircle3-api.vercel.app/api</code>，出现数据即为部署成功</p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://noionion-picture-bed.oss-cn-hangzhou.aliyuncs.com/img/20210801204926.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.7/tianjiapengyouquan/20210801204926.png" alt=""></p>
 </li>
 </ol>
 <h2 id="2-2前端部署配置"><a href="#2-2前端部署配置" class="headerlink" title="2.2前端部署配置"></a>2.2前端部署配置</h2><h3 id="2-2-1hexo-插件安装版"><a href="#2-2-1hexo-插件安装版" class="headerlink" title="2.2.1hexo 插件安装版"></a>2.2.1hexo 插件安装版</h3><ol>

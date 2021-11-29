@@ -163,17 +163,17 @@
  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> themes</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/HCLonely/hexo-theme-webstack.git</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>下载完成后navigation下的文件应该与下图一致,如果有多余的文件删除即可。</p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://gitee.com/Langwenchong/figure-bed/raw/master/P4O96[%7D00UI[UFKDVGTTCW2.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo/TianJiaBaiBaoXiang/P4O96[%7D00UI[UFKDVGTTCW2.png" alt=""></p>
 </li>
 <li><p>我们打开当前中的站点配置文件_config.yml文件，修改一下使用的主题:</p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://gitee.com/Langwenchong/figure-bed/raw/master/%60B]C43H]L%7B@E7B%60[G%60A%7DB@T.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo/TianJiaBaiBaoXiang/%60B]C43H]L%7B@E7B%60[G%60A%7DB@T.png" alt=""></p>
 </li>
 <li><p>然后我们再在站点根目录右键点击<code>git bash here</code>打开命令窗输入<code>hexo cl &amp;&amp; hexo g&amp;&amp; heso s</code>后在端口<code>localhost://4000</code>上即可看到本地预览的效果，但是此时我们发现里面的内容还是空的，链接都没有，因为这需要我们自己添加，同时此时的个人信息还不是自己的，关于页面也还没有建立。我们需要参考<a target="_blank" rel="noopener" href="https://blog.hclonely.com/posts/3cd4fb34/">官方配置文档</a>进行配置即可：</p>
 </li>
 </ol>
 <h2 id="2-2魔改教程"><a href="#2-2魔改教程" class="headerlink" title="2.2魔改教程"></a>2.2魔改教程</h2><ol>
 <li><p>去除Chinese语言选项，这个东西…没啥用，而且总是跳转到空白界面，很烦所以将它去除，我们打开<strong><code>navigation/themes/layout/index.ejs</code></strong>文件将16-27行注释掉即可：</p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://gitee.com/Langwenchong/figure-bed/raw/master/20210716114155.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo/TianJiaBaiBaoXiang/20210716114155.png" alt=""></p>
 </li>
 <li><p>夜间模式的选择框增加白色阴影选中样式，我们还是在<strong><code>navigation/themes/webstack/source/css/hclonely.css</code></strong>中加入如下代码：</p>
  <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span><span class="selector-class">.night</span> <span class="selector-class">.box2</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">  <span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">26px</span> <span class="number">40px</span> -<span class="number">24px</span> <span class="built_in">rgb</span>(<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>);</span><br><span class="line">  -webkit-<span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">26px</span> <span class="number">40px</span> -<span class="number">24px</span> <span class="built_in">rgba</span>(<span class="number">130</span>, <span class="number">130</span>, <span class="number">130</span>, <span class="number">0.13</span>);</span><br><span class="line">  -moz-<span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">26px</span> <span class="number">40px</span> -<span class="number">24px</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">36</span>, <span class="number">100</span>, <span class="number">0.3</span>);</span><br><span class="line">  -webkit-<span class="attribute">transition</span>: all <span class="number">0.3s</span> <span class="built_in">cubic-bezier</span>(<span class="number">0.25</span>, <span class="number">0.1</span>, <span class="number">0.14</span>, <span class="number">1.43</span>);</span><br><span class="line">  -moz-<span class="attribute">transition</span>: all <span class="number">0.3s</span> ease;</span><br><span class="line">  -o-<span class="attribute">transition</span>: all <span class="number">0.3s</span> ease;</span><br><span class="line">  <span class="attribute">transition</span>: all <span class="number">0.3s</span> ease-out;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#232323</span> <span class="meta">!important</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -188,19 +188,19 @@
  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo cl</span><br><span class="line">hexo g</span><br><span class="line">hexo s//本地预览一下生成的页面是否正常</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>当本地预览没有任何问题后，我们打开navigation下的public文件夹，这个文件夹存储的是生成的html文件，我们将public文件夹下的所有文件复制：</p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://gitee.com/Langwenchong/figure-bed/raw/master/20210716140845.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo/TianJiaBaiBaoXiang/20210716140845.png" alt=""></p>
 </li>
 <li><p>然后我们打开自己的博客站点文件夹，我这里是<code>myblog</code>（名字可能不同），然后在博客站点文件夹下进入source文件夹并创建一个新的文件夹navigation:</p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://gitee.com/Langwenchong/figure-bed/raw/master/20210716142711.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo/TianJiaBaiBaoXiang/20210716142711.png" alt=""></p>
 </li>
 <li><p>然后进入这个navigation文件夹将刚刚复制的文件拷贝过来即可。然后我们再打开博客站点文件夹下的_config.yml文件，在如下地方加入<code>- &quot;navigation/**&quot;</code>。意思是hexo博客渲染生成页面时这个文件夹下的内容跳过渲染显示：</p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://gitee.com/Langwenchong/figure-bed/raw/master/20210716142110.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo/TianJiaBaiBaoXiang/20210716142110.png" alt=""></p>
 </li>
 <li><p>此时我们运行博客本地预览，重新生成博客页面</p>
  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo cl &amp;&amp; hexo g</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>输入<code>hexo s</code>打开本地博客预览后输入地址<code>http://localhost:4000/navigation/</code> 即可看到百宝箱已经加入成功：</p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://gitee.com/Langwenchong/figure-bed/raw/master/20210716141648.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo/TianJiaBaiBaoXiang/20210716141648.png" alt=""></p>
 </li>
 <li><p>接下来我们只需要为自己的博客顶栏添加一个新的图标链接指向这个子页即可了。最后在博客站点下重新部署即可将导航栏百宝箱部署线上！</p>
 </li>

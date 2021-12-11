@@ -431,9 +431,5 @@ a#card-info-btn.button--animated::before{
 /* 评论输入框点击后的夜间模式背景设置 */
 [data-theme='dark']
  div.gt-container.gt-input-focused::after{
-   background-color: #272727ec;
-   filter: brightness(0.8);
-   border: 1px solid rgb(41, 41, 41);
-   border-radius: 8px;
-   box-shadow: 0px 5px 5px rgba(3, 126, 95, 0.897);
+   background-color: #ffffff00;
  }

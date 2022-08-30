@@ -154,12 +154,12 @@
 </div>
 <h1 id="1-创建一个GitHub仓库存储图片"><a href="#1-创建一个GitHub仓库存储图片" class="headerlink" title="1.创建一个GitHub仓库存储图片"></a>1.创建一个GitHub仓库存储图片</h1><ol>
 <li><p>首先创建一个图床仓库用来存放图片，仓库名随意。以下会以 <code>[AssetsRepo]</code> 指代这个静态资源仓库。</p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.8/npm_tuchuangdajian/c3fffaba.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://npm.elemecdn.com/qianchengnpm-blogassetsrepo@1.0.8/npm_tuchuangdajian/c3fffaba.png" alt=""></p>
 </li>
 <li><p>访问 <a target="_blank" rel="noopener" href="https://github.com/settings/tokens">Github-&gt; 头像（右上角）-&gt;Settings-&gt;Developer Settings-&gt;Personal access tokens</a>-&gt;<kbd>generate new token</kbd>, 创建的 <code>Token</code> 名称随意，但必须勾选 <code>repo</code> 项。</p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.8/npm_tuchuangdajian/PISlRDgrsBXzcLK.png" alt=""></p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.8/npm_tuchuangdajian/yF8cNUkmAJVBSuw.png" alt=""></p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.8/npm_tuchuangdajian/20200923085908748.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://npm.elemecdn.com/qianchengnpm-blogassetsrepo@1.0.8/npm_tuchuangdajian/PISlRDgrsBXzcLK.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://npm.elemecdn.com/qianchengnpm-blogassetsrepo@1.0.8/npm_tuchuangdajian/yF8cNUkmAJVBSuw.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://npm.elemecdn.com/qianchengnpm-blogassetsrepo@1.0.8/npm_tuchuangdajian/20200923085908748.png" alt=""></p>
  <div class="note warning flat"><p><code>token</code> 只会显示这一次，之后将无法查看，所以务必保证你已经记录下了 <code>Token</code>。之后如果忘记了就只能重新生成重新配置了。</p>
 </div>
 </li>
@@ -186,10 +186,10 @@
 </ol>
 <h1 id="3-npm图床使用"><a href="#3-npm图床使用" class="headerlink" title="3.npm图床使用"></a>3.npm图床使用</h1><ol>
 <li><p>首先需要注册一个 npm 的账号。访问 <a target="_blank" rel="noopener" href="https://www.npmjs.com/signup/">npm 注册页面</a></p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.8/npm_tuchuangdajian/a935a0d4.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://npm.elemecdn.com/qianchengnpm-blogassetsrepo@1.0.8/npm_tuchuangdajian/a935a0d4.png" alt=""></p>
 </li>
 <li><p>完成邮箱验证，注册完成后进入账号管理界面:<kbd>头像</kbd> -&gt;<kbd>Account</kbd>，拉倒最上方，你会看到 <code>You have not verified your email address</code> 字样的提示，点击以后按提示步骤验证你的邮箱。</p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.8/npm_tuchuangdajian/85e92b51.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://npm.elemecdn.com/qianchengnpm-blogassetsrepo@1.0.8/npm_tuchuangdajian/85e92b51.png" alt=""></p>
 </li>
 <li><p>找到我们之前创建的图床仓库，在本地合适的位置把它 <code>clone</code> 下来。找个空文件夹打开终端输入：</p>
  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git@github.com:[username]/[AssetsRepo].git</span><br><span class="line"><span class="comment">#或者</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/[username]/[AssetsRepo].git</span><br></pre></td></tr></table></figure>
@@ -202,7 +202,7 @@
 </li>
 <li><p>运行 npm 初始化指令，把整个图床仓库打包，按照指示进行配置，<strong><code>注意需要事先确认你的包名没有和别人已发布的包重复</code></strong>，可以在 <a target="_blank" rel="noopener" href="https://www.npmjs.com/">npm 官网</a>搜索相应包名，搜不到就说明还没被占用。</p>
  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm init</span><br></pre></td></tr></table></figure>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.8/npm_tuchuangdajian/6000c029.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://npm.elemecdn.com/qianchengnpm-blogassetsrepo@1.0.8/npm_tuchuangdajian/6000c029.png" alt=""></p>
 <p> 最后会输出一段 package.json，请求确认，输入 yes 即可。</p>
 </li>
 <li><p>然后输入发布指令，我们就可以把包发布到 npm 上了。</p>
@@ -213,22 +213,22 @@
  <div class="tip success"><p>可以看到 Npm 只需要提供包名即可。这也是一开始要求包名不重复的原因之一</p>
 </div>
  <div class="tip bolt"><p>jsDelivr+Npm 依然有 100MB 的包大小限制，但是 NPM 有丰富的国内节点。可以挑选一个使用。个人推荐知乎的。没有大小限制，而且也很稳定。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">【jsd出品，网宿国内节点】</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;:package@:version&#x2F;:file</span><br><span class="line">【知乎出品，网宿国内节点】</span><br><span class="line">https:&#x2F;&#x2F;unpkg.zhimg.com&#x2F;:package@:version&#x2F;:file</span><br><span class="line">【百度出品，网宿国内节点】</span><br><span class="line">https:&#x2F;&#x2F;code.bdstatic.com&#x2F;npm&#x2F;:package@:version&#x2F;:file</span><br><span class="line">【饿了么出品，网宿国内节点】</span><br><span class="line">https:&#x2F;&#x2F;shadow.elemecdn.com&#x2F;npm&#x2F;:package@:version&#x2F;:file</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">	【jsd出品，网宿国内节点】</span><br><span class="line">	https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;:package@:version&#x2F;:file</span><br><span class="line">	【知乎出品，网宿国内节点】</span><br><span class="line">	主域名国内访问速度较慢，但有适合国内访问的镜像地址</span><br><span class="line">	主域名：https:&#x2F;&#x2F;unpkg.com&#x2F;:package@:version&#x2F;:file</span><br><span class="line">	镜像地址：https:&#x2F;&#x2F;unpkg.zhimg.com&#x2F;:package@:version&#x2F;:file</span><br><span class="line">	【百度出品，网宿国内节点】</span><br><span class="line">	https:&#x2F;&#x2F;code.bdstatic.com&#x2F;npm&#x2F;:package@:version&#x2F;:file</span><br><span class="line">	【饿了么出品，网宿国内节点】</span><br><span class="line">https:&#x2F;&#x2F;npm.elemecdn.com&#x2F;:package@:version&#x2F;:file</span><br><span class="line">	https:&#x2F;&#x2F;shadow.elemecdn.com&#x2F;npm&#x2F;:package@:version&#x2F;:file</span><br></pre></td></tr></table></figure>
 </div>
-<p> 知乎引用效果图：</p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.5/img/t01678c7fa1f713fb19.jpg" alt=""></p>
-<p> 百度引用效果图：</p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://code.bdstatic.com/npm/qianchengnpm-blogassetsrepo@1.0.5/img/t015a1f3a7dd7422ae0.jpg" alt=""></p>
 </li>
 </ol>
-<h1 id="4-使用GitHub-Action自动发布npm包"><a href="#4-使用GitHub-Action自动发布npm包" class="headerlink" title="4.使用GitHub Action自动发布npm包"></a>4.使用GitHub Action自动发布npm包</h1><p>如果每次都要在本地进行 <code>npm publish</code> 的话，npm 的提交是整个包一起上传的，不存在增量更新，耗时不说，而且还往往需要架梯子才能正常上传。所以我们可以把它交给 github action 来完成。</p>
+<p>知乎引用效果图：</p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://unpkg.com/qianchengnpm-blogassetsrepo@1.0.5/img/t01678c7fa1f713fb19.jpg" alt=""></p>
+<p>百度引用效果图：</p>
+<pre><code>![](https://code.bdstatic.com/npm/qianchengnpm-blogassetsrepo@1.0.5/img/t015a1f3a7dd7422ae0.jpg)
+</code></pre><h1 id="4-使用GitHub-Action自动发布npm包"><a href="#4-使用GitHub-Action自动发布npm包" class="headerlink" title="4.使用GitHub Action自动发布npm包"></a>4.使用GitHub Action自动发布npm包</h1><p>如果每次都要在本地进行 <code>npm publish</code> 的话，npm 的提交是整个包一起上传的，不存在增量更新，耗时不说，而且还往往需要架梯子才能正常上传。所以我们可以把它交给 github action 来完成。</p>
 <ol>
 <li><p>在 <a target="_blank" rel="noopener" href="https://www.npmjs.com/">npm 官网</a> -&gt;<kbd>头像</kbd> -&gt;<kbd>Access Tokens</kbd>-&gt;<kbd>Generate New Token</kbd>, 勾选<kbd>Automation</kbd> 选项，然后点击<kbd>Generate Token</kbd>生成<code>Token</code> ，<code>Token</code> 只会显示这一次，之后如果忘记了就只能重新生成重新配置了。</p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.8/npm_tuchuangdajian/0e884db2.png" alt=""></p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.8/npm_tuchuangdajian/0158bc90.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://npm.elemecdn.com/qianchengnpm-blogassetsrepo@1.0.8/npm_tuchuangdajian/0e884db2.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://npm.elemecdn.com/qianchengnpm-blogassetsrepo@1.0.8/npm_tuchuangdajian/0158bc90.png" alt=""></p>
 </li>
 <li><p>在 github 的 [AssetsRepo] 仓库设置项里添加一个名为 <code>NPM_TOKEN</code> 的 <code>secrets</code>，把获取的 Npm 的 Access token 输入进去。</p>
-<p> <img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.8/npm_tuchuangdajian/c6dbbfb5.png" alt=""></p>
+<p> <img src= "/img/loading.gif" data-lazy-src="https://npm.elemecdn.com/qianchengnpm-blogassetsrepo@1.0.8/npm_tuchuangdajian/c6dbbfb5.png" alt=""></p>
 </li>
 <li><p>在本地的 <code>[AssetsRepo]</code> 文件夹下新建 <code>[AssetsRepo]/.github/workflows/autopublish.yml</code>,然后输入下面内容：</p>
  <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">Node.js</span> <span class="string">Package</span></span><br><span class="line"><span class="comment"># 监测图床分支，2020年10月后github新建仓库默认分支改为main，记得更改</span></span><br><span class="line"><span class="attr">on:</span></span><br><span class="line">  <span class="attr">push:</span></span><br><span class="line">    <span class="attr">branches:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">master</span></span><br><span class="line"></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line">  <span class="attr">publish-npm:</span></span><br><span class="line">    <span class="attr">runs-on:</span> <span class="string">ubuntu-latest</span></span><br><span class="line">    <span class="attr">steps:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">uses:</span> <span class="string">actions/checkout@v2</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">uses:</span> <span class="string">actions/setup-node@v1</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">node-version:</span> <span class="string">&quot;12.x&quot;</span></span><br><span class="line">          <span class="attr">registry-url:</span> <span class="string">https://registry.npmjs.org/</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">run:</span> <span class="string">npm</span> <span class="string">publish</span></span><br><span class="line">        <span class="attr">env:</span></span><br><span class="line">          <span class="attr">NODE_AUTH_TOKEN:</span> <span class="string">$&#123;&#123;secrets.npm_token&#125;&#125;</span></span><br></pre></td></tr></table></figure>
@@ -243,7 +243,7 @@
 </ol>
 <div class="note primary modern"><p class='p red center small'>为了更直观的展示原理，流程图如下：</p>
 
-<p><img src= "/img/loading.gif" data-lazy-src="https://unpkg.zhimg.com/qianchengnpm-blogassetsrepo@1.0.8/npm_tuchuangdajian/npm%E5%9B%BE%E5%BA%8A%E6%8F%90%E4%BA%A4%E6%B5%81%E7%A8%8B.png" alt="流程图"></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://npm.elemecdn.com/qianchengnpm-blogassetsrepo@1.0.8/npm_tuchuangdajian/npm%E5%9B%BE%E5%BA%8A%E6%8F%90%E4%BA%A4%E6%B5%81%E7%A8%8B.png" alt="流程图"></p>
 </div>
 <h1 id="5-注意事项"><a href="#5-注意事项" class="headerlink" title="5.注意事项"></a>5.注意事项</h1><div class="tip bolt"><ol>
 <li>虽然GitHub 公开仓库大小为 100GB，并且可以创建无数个仓库！但是这 100GB 我们并不能全用完，甚至每个仓库不能超过 1G。因为官方的解释是尽量不要传大文件，且仓库超过 1G 后会有人工审核仓库内容，如果发现用来做图床，轻则删库，重则封号。因此为了安全起见，建议在 1G 之前就换个仓库，反正可以创建无数个仓库嘛！</li>
